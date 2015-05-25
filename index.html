@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="melbourne victoria furniture repair maintenance moran pegar integral celect mossman morgan"/>
+<title>TFS Total Furniture Solutions - Furniture Repair and Maintenance in Melbourne</title>
+
+<link href="css/tfs.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var currentCategory = "1";
+        $('.carousel').carousel({'pause' : false}).bind('slid', function(e) {
+           var category = $('.active').attr('data-category');
+           if (category != currentCategory) {
+               $('li[data-category=' + currentCategory + ']').removeClass('highlight');
+               $('li[data-category=' + category + ']').addClass('highlight');
+               currentCategory = category;
+           }
+        });
+        $('#categories li').click(function() {
+            var category = $(this).attr('data-category');
+            $('.item').each(function() {
+                if ($(this).attr('data-category') == category) {
+                    $('.carousel').carousel($(this).index());
+                    return false;
+                }
+            });
+        });
+        $('.item').click(function() {
+            $('.carousel').carousel('pause');
+            $('.modal-content > img').attr('src', $('img', this).attr('src'));
+            $('.modal').modal()
+        });
+        $('.modal').on('hide', function() {
+            $('.carousel').carousel({'pause' : false});
+        });
+    });
+</script>
+
+</head>
+<body>
+<div id="topPan">
+    <span class="logo">TFS Total Furniture Solutions</span>
+    <p>Credible, Quality & Friendly Service</p>
+</div>
+
+<div id="bodyPan">
+  <div id="bodyLeftPan">
+  	<h2><span>about</span> total furniture solutions</h2>
+	<p>Dimitri Akkerman has 20 years experience in the furniture industry (Moran, Pegar, Integral, Celect, Mossman, Morgan and others) specialising in repair and replacement.</p>
+	<p class="more"></p>
+	<h3><span>his</span> skills and knowledge</h3>
+    <ul id="categories">
+        <li data-category="1" class="highlight"><a href="javascript:void(0)">Re-upholstery service</a></li>
+        <li data-category="2"><a href="javascript:void(0)">Furniture assembly</a></li>
+        <li data-category="3"><a href="javascript:void(0)">Recliners and sofa bed mechanism (manual &amp; motorised)</a></li>
+        <li data-category="4"><a href="javascript:void(0)">Cables and handles</a></li>
+        <li data-category="5"><a href="javascript:void(0)">Seat and back foam re-padding</a></li>
+        <li data-category="6"><a href="javascript:void(0)">Broken frame repair (wood and metal)</a></li>
+        <li data-category="7"><a href="javascript:void(0)">Machine stitching</a></li>
+        <li data-category="8"><a href="javascript:void(0)" class="nolink">Zipper replacement</a></li>
+        <li data-category="9"><a href="javascript:void(0)">Webbing and springs</a></li>
+        <li data-category="10"><a href="javascript:void(0)" class="nolink">Upholstery cleaning, removal of light scratches, touching up</a></li>
+        <li data-category="11"><a href="javascript:void(0)" class="nolink">Pickup and delivery</a></li>
+        <li data-category="12"><a href="javascript:void(0)">Re-polishing</a></li>
+        <li data-category="13"><a href="javascript:void(0)">Furniture removal</a></li>
+    </ul>
+	<div id="bodyLeftNextPan">
+	    <p class="more"></p>
+	</div>
+  </div>
+  <div id="bodyRightPan">
+  	<h2><span>contact</span> details</h2>
+    <p><strong>Email:</strong>&nbsp;tfsmelbourne@gmail.com</p>
+    <p><strong>Phone:</strong>&nbsp;0401447188</p>
+    <p><strong>Fax:</strong>&nbsp;(03) 95765957</p>
+    <ul></ul>
+    <h3><span>postal</span> address</h3>
+    <p class="boldtext">Dimitri Akkerman</p>
+    <p>Total Furniture Solutions Pty Ltd</p>
+    <p class="pr20">218 Jasper Road, McKinnon, VIC 3204</p>
+  </div>
+
+  <div id="carouselPan">
+    <div id="carousel">
+      <div class="carousel slide">
+        <div class="carousel-inner">
+          <div class="item active" data-category="1"><img src="images/slideshow/1-01.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-02.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-03.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-04.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-05.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-06.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-07.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-08.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-09.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-10.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-11.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-12.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-13.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-14.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-15.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-16.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-17.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-18.jpg"/></div>
+          <div class="item" data-category="1"><img src="images/slideshow/1-19.jpg"/></div>
+          <div class="item" data-category="2"><img src="images/slideshow/2-01.jpg"/></div>
+          <div class="item" data-category="2"><img src="images/slideshow/2-02.jpg"/></div>
+          <div class="item" data-category="3"><img src="images/slideshow/3-01.jpg"/></div>
+          <div class="item" data-category="3"><img src="images/slideshow/3-02.jpg"/></div>
+          <div class="item" data-category="3"><img src="images/slideshow/3-03.jpg"/></div>
+          <div class="item" data-category="3"><img src="images/slideshow/3-04.jpg"/></div>
+          <div class="item" data-category="3"><img src="images/slideshow/3-05.jpg"/></div>
+          <div class="item" data-category="4"><img src="images/slideshow/4-01.jpg"/></div>
+          <div class="item" data-category="4"><img src="images/slideshow/4-02.jpg"/></div>
+          <div class="item" data-category="4"><img src="images/slideshow/4-03.jpg"/></div>
+          <div class="item" data-category="4"><img src="images/slideshow/4-04.jpg"/></div>
+          <div class="item" data-category="4"><img src="images/slideshow/4-05.jpg"/></div>
+          <div class="item" data-category="4"><img src="images/slideshow/4-06.jpg"/></div>
+          <div class="item" data-category="5"><img src="images/slideshow/5-01.jpg"/></div>
+          <div class="item" data-category="6"><img src="images/slideshow/6-01.jpg"/></div>
+          <div class="item" data-category="6"><img src="images/slideshow/6-02.jpg"/></div>
+          <div class="item" data-category="6"><img src="images/slideshow/6-03.jpg"/></div>
+          <div class="item" data-category="6"><img src="images/slideshow/6-04.jpg"/></div>
+          <div class="item" data-category="6"><img src="images/slideshow/6-05.jpg"/></div>
+          <div class="item" data-category="6"><img src="images/slideshow/6-06.jpg"/></div>
+          <div class="item" data-category="7"><img src="images/slideshow/7-01.jpg"/></div>
+          <div class="item" data-category="7"><img src="images/slideshow/7-02.jpg"/></div>
+          <div class="item" data-category="7"><img src="images/slideshow/7-03.jpg"/></div>
+          <div class="item" data-category="7"><img src="images/slideshow/7-04.jpg"/></div>
+          <div class="item" data-category="9"><img src="images/slideshow/9-01.jpg"/></div>
+          <div class="item" data-category="12"><img src="images/slideshow/12-01.jpg"/></div>
+          <div class="item" data-category="12"><img src="images/slideshow/12-02.jpg"/></div>
+          <div class="item" data-category="12"><img src="images/slideshow/12-03.jpg"/></div>
+          <div class="item" data-category="12"><img src="images/slideshow/12-04.jpg"/></div>
+          <div class="item" data-category="12"><img src="images/slideshow/12-05.jpg"/></div>
+          <div class="item" data-category="12"><img src="images/slideshow/12-06.jpg"/></div>
+          <div class="item" data-category="12"><img src="images/slideshow/12-07.jpg"/></div>
+          <div class="item" data-category="13"><img src="images/slideshow/13-01.jpg"/></div>
+          <div class="item" data-category="13"><img src="images/slideshow/13-02.jpg"/></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal hide fade">
+       <div class="modal-body">
+           <div class="modal-content">
+            <img src=""/>
+           </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="footermainPan">
+  <div id="footerPan">
+	<p class="copyright">&copy; TFS Total Furniture Solutions. All rights reserved.</p>
+  </div>
+</div>
+</body>
+</html>
